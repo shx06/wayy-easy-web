@@ -77,7 +77,6 @@ function ContactForm() {
             <input
               className="form-control"
               type="text"
-              maxLength="100"
               required
               value={input.name}
               onChange={(e) => setInput({ ...input, name: e.target.value })}
@@ -90,7 +89,6 @@ function ContactForm() {
             <input
               className="form-control"
               type="email"
-              maxLength="100"
               required
               value={input.email}
               onChange={(e) => setInput({ ...input, email: e.target.value })}
