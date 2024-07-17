@@ -1,0 +1,35 @@
+.btnPrimary, .btnOutlined {
+  transition: all 0.3s linear;
+  overflow: hidden;
+}
+
+.btnPrimary::after{
+  content: "";
+  display: block;
+  opacity: 0;
+  position: absolute;
+  bottom: -5px;
+  right: -15px;
+  width: 40px;
+  height: 130px;
+  background-color: rgba(228, 223, 255, 0.20);
+  transition: all 0.3s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+}
+.btnOutlined::after{
+  content: "";
+  display: block;
+  opacity: 0;
+  position: absolute;
+  bottom: -5px;
+  right: -15px;
+  width: 40px;
+  height: 130px;
+  background-color: rgba(21, 101, 192, 0.15);
+  transition: all 0.3s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+}
+
+.btnPrimary:hover::after, .btnOutlined:hover::after {
+  transform: rotate(-30deg) translate(-20px, 10px);
+  opacity: 1;
+  width: 70px;
+}

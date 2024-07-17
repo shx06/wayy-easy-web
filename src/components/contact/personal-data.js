@@ -1,0 +1,17 @@
+export const personalData = {
+  name: "Wayy Easy",
+  profile: "/profile.png", 
+  designation: "App/Web Service, Digital Marketer, Desktop Software, AI/ML, Block Chain Services",
+  description: "At Wayy Easy, headquartered in vibrant Kolkata, India, we specialize in transforming intricate challenges into elegant, user-centric designs. As seasoned Web and App Developers, alongside adept Digital Marketers, we excel in creating functional, aesthetically pleasing websites and applications. Our mission? To infuse your digital presence with a personalized touch, ensuring each product is not only visually captivating but also effortlessly navigable. With a portfolio adorned by collaborations with renowned brands, we pride ourselves on delivering creative solutions that amplify your message and identity. Let Wayy Easy sculpt your digital future with innovation and finesse.",
+  email: "wayy.easy.team@gmail.com",
+  phone: "+919748976922",
+  address: "Park Circus, Kolkata, West bengal, India",
+  github: "",
+  facebook: "",
+  linkedIn: "https://www.linkedin.com/company/82651982/admin/feed/posts/",
+  twitter: "",
+  stackOverflow: "",
+  leetcode: "",
+  devUsername: "datagenie",
+  resume: "",
+};
