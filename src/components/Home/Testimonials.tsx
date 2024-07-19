@@ -5,7 +5,7 @@ import SectionWrapper from "../common/SectionWrapper";
 import { Box, IconButton, Typography } from "@mui/material";
 import Slider from "react-slick";
 
-import logo from "@/assets/images/logo-with-bg.png";
+import logo from "@/assets/images/logo.png";
 import { MdArrowBackIos, MdArrowForwardIos } from "react-icons/md";
 
 type Props = {};
@@ -13,11 +13,11 @@ type Props = {};
 const data = [
   {
     _id: 1,
-    name: "John Doe",
+    name: "Mr. Ali",
     image: "https://via.placeholder.com/150",
     rating: 4.5,
     quote:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget felis ullamcorper, bibendum felis vel, congue sem. Fusce auctor nisi eu nunc commodo, sit amet interdum sapien.",
+      "Wayy Easy & team created an outstanding delivery website for our company. Their expertise in Next.js and React.js resulted in a visually stunning, highly functional, and user-friendly site. The seamless communication and attention to detail were impressive, and they delivered on time with valuable insights that enhanced the final product. Highly recommended!",
   },
   {
     _id: 2,
@@ -25,15 +25,15 @@ const data = [
     image: "https://via.placeholder.com/150",
     rating: 4.5,
     quote:
-      "Sed pellentesque eleifend velit quis rutrum. Pellentesque sit amet ultricies nisl. Praesent dignissim massa vel euismod dignissim. Proin lacinia suscipit nisl, non finibus risus semper id.",
+      "Wayy Easy & team developed a fantastic mobile application for our company. The app boasts robust functionality, intuitive design, and smooth performance. Their professionalism and expertise ensured timely delivery and exceeded our expectations. Highly recommended for top-notch mobile app development!",
   },
   {
     _id: 3,
-    name: "Mr. Bean",
+    name: "Mr. Ben",
     image: "https://via.placeholder.com/150",
     rating: 4.5,
     quote:
-      "Sed pellentesque eleifend velit quis rutrum. Pellentesque sit amet ultricies nisl. Praesent dignissim massa vel euismod dignissim. Proin lacinia suscipit nisl, non finibus risus semper id.",
+      "Wayy Easy & team developed an outstanding blockchain project for us. Their deep understanding of blockchain technology and meticulous attention to detail resulted in a secure and efficient solution. The project was delivered on time, with seamless communication throughout. Highly recommended for any blockchain development needs!",
   },
   {
     _id: 4,
@@ -41,11 +41,11 @@ const data = [
     image: "https://via.placeholder.com/150",
     rating: 4.5,
     quote:
-      "Sed pellentesque eleifend velit quis rutrum. Pellentesque sit amet ultricies nisl. Praesent dignissim massa vel euismod dignissim. Proin lacinia suscipit nisl, non finibus risus semper id.",
+      "Wayy Easy & team delivered exceptional Android and iOS apps for our business. The apps are user-friendly, feature-rich, and perform flawlessly across both platforms. Their expertise and dedication ensured a smooth development process and timely delivery. Highly recommended for top-tier mobile app development!",
   },
 ];
 
-export default function Testimonials({}: Props) {
+export default function Testimonials({ }: Props) {
   const CustomPrevArrow = (props: any) => {
     const { className, onClick } = props;
     return (
@@ -119,8 +119,7 @@ export default function Testimonials({}: Props) {
     <SectionWrapper bgColor="secondary">
       <SectionHeading
         heading="Happy Clients"
-        description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
-            incidunt rerum dolores pariatur. Odio, id. Iure commodi, similique."
+        description="What our clients say about us."
         position="center"
       />
 
@@ -140,7 +139,7 @@ export default function Testimonials({}: Props) {
           {data.map((testimonial) => (
             <Box key={testimonial._id} sx={{ textAlign: "left", px: 1.5 }}>
               <Box sx={{ p: 2.5, bgcolor: "background.primary", borderRadius: 3 }}>
-                <Box component={Image} src={logo} alt={testimonial.name} width={100} height={100} sx={{ display: "block" }} />
+                <Box component={Image} src={logo} alt={testimonial.name} width={100} height={50} sx={{ display: "block" }} />
 
                 <Typography variant="subtitle1" sx={{ mt: 3, fontSize: "18px", color: "text.primary" }}>
                   {testimonial.name}

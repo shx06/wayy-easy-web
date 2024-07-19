@@ -16,11 +16,10 @@ import {
   useScrollTrigger,
 } from "@mui/material";
 
-import { signOut, useSession } from "next-auth/react";
+import { useSession } from "next-auth/react";
 import { useEffect, useState } from "react";
 import { BsFillMoonFill, BsSunFill } from "react-icons/bs";
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
-import BtnOutlined from "../button/BtnOutlined";
 import BtnPrimary from "../button/BtnPrimary";
 import MobileNavbar from "./MobileNavbar";
 import navLinks from "./navLinks";
@@ -97,6 +96,10 @@ const NavBar = () => {
   const UserMenuOpen = Boolean(anchorEl);
   const userPopOverId = UserMenuOpen ? "user-popover" : undefined;
 
+  const handleCallButtonClick = () => {
+    window.location.href = 'tel:+919748976922'; // Replace with your phone number
+  };
+
   return (
     <>
       <HideOnScroll>
@@ -166,32 +169,12 @@ const NavBar = () => {
                   {themeMode === "light" ? <BsSunFill /> : <BsFillMoonFill />}
                 </IconButton>
 
-                {session?.user ? (
-                  // ----------------- Disabled for PopOver Issue ---------------
-                  // <IconButton
-                  //   onClick={handleUserPopOver}
-                  //   aria-describedby={userPopOverId}
-                  // >
-                  //   <Avatar
-                  //     alt={session?.user?.name}
-                  //     sx={{ width: 40, height: 40 }}
-                  //   />
-                  // </IconButton>
-
-                  <BtnOutlined
-                    sx={{ px: 4, display: { xs: "none", md: "block" } }}
-                    onClick={() => signOut()}
-                  >
-                    LogOut
-                  </BtnOutlined>
-                ) : (
-                  <BtnPrimary
-                    sx={{ px: 4, display: { xs: "none", md: "block" } }}
-                    onClick={() => router.push("/login")}
-                  >
-                    Login
-                  </BtnPrimary>
-                )}
+                <BtnPrimary
+                  sx={{ px: 4, display: { xs: "none", md: "block" } }}
+                  onClick={() => handleCallButtonClick()}
+                >
+                  Call Us
+                </BtnPrimary>
 
                 <IconButton
                   edge="end"

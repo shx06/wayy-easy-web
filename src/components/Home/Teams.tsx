@@ -1,18 +1,15 @@
 import {
   Box,
   Grid,
-  IconButton,
   Stack,
   Typography,
-  useTheme,
+  useTheme
 } from "@mui/material";
 import SectionHeading from "../common/SectionHeading";
 import SectionWrapper from "../common/SectionWrapper";
 
 import teamMembers from "@/assets/data/teamMembers";
 import { ITeamMember } from "@/utils/interface/dataModels";
-import Link from "next/link";
-import { FaFacebookF, FaGoogle, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 
 type Props = {};
 
@@ -93,7 +90,7 @@ export default function Teams({}: Props) {
                   spacing={2}
                   sx={{ zIndex: 2 }}
                 >
-                  <Link
+                  {/* <Link
                     href={item?.facebook}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -140,7 +137,7 @@ export default function Teams({}: Props) {
                     >
                       <FaGoogle color="white" size={20} />
                     </IconButton>
-                  </Link>
+                  </Link> */}
                 </Stack>
                 <Box
                   component="img"

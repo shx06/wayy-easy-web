@@ -2,10 +2,6 @@ import { Box } from "@mui/material";
 import { useSession } from "next-auth/react";
 import Banner from "./Banner";
 import ChooseUs from "./ChooseUs";
-import Facts from "./Facts";
-import Services from "./Services";
-import Teams from "./Teams";
-import Testimonials from "./Testimonials";
 
 const Home = () => {
   const { data: session } = useSession();
@@ -19,10 +15,10 @@ const Home = () => {
       >
         <Banner />
         <ChooseUs />
-        <Services />
+        {/* <Services />
         <Facts />
         <Teams />
-        <Testimonials />
+        <Testimonials /> */}
       </Box>
     </>
   );

@@ -6,7 +6,7 @@ import Image from "next/image";
 export default function maintenance() {
   return (
     <>
-      <SEO title="Maintenance | Web Serv" />
+      <SEO title="Maintenance | Wayy Easy" />
       <Stack
         direction={{ xs: "column", md: "row" }}
         alignItems="center"

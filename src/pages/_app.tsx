@@ -33,10 +33,10 @@ const App = ({ Component, ...rest }: AppPropsWithLayout) => {
       {/* Default Head */}
       <ToastContainer />
       <Head>
-        <title>Web Serv | Developer Agency</title>
+        <title>Wayy Easy | All Software Solutions</title>
         <meta
           name="description"
-          content="web serv - a web development service provider agency"
+          content="wayy easy - a software solution group for any kind of solution and in the best possible kind"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />

@@ -1,7 +1,6 @@
 import banner from "@/assets/images/about_us.png";
 import { Box, Stack, Typography, useTheme } from "@mui/material";
 import Image from "next/image";
-import BtnOutlined from "../button/BtnOutlined";
 import SectionWrapper from "../common/SectionWrapper";
 
 export default function Banner() {
@@ -55,13 +54,12 @@ export default function Banner() {
             </Typography>
 
             <Typography variant="subtitle1" sx={{ fontWeight: 500, lineHeight: 1.4, my: 4 }}>
-              Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil aenean socada commodo molestiae consequatur, vel illum
-              qui dolorem eum fugiat quo voluptas nulla.
+              Turning ideas into reality with innovative, client-focused solutions, ensuring quality, scalability, and dedicated support across diverse industries.
             </Typography>
 
-            <BtnOutlined>
+            {/* <BtnOutlined>
               <span>Learn More</span>
-            </BtnOutlined>
+            </BtnOutlined> */}
           </Box>
 
           {/* Right Side/Banner Image */}

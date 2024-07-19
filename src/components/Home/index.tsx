@@ -2,7 +2,6 @@ import { Box } from "@mui/material";
 import { useSession } from "next-auth/react";
 import Banner from "./Banner";
 import ChooseUs from "./ChooseUs";
-import Facts from "./Facts";
 import Services from "./Services";
 import Teams from "./Teams";
 import Testimonials from "./Testimonials";
@@ -21,7 +20,7 @@ const Home = () => {
         <Banner />
         <ChooseUs />
         <Services />
-        <Facts />
+        {/* <Facts /> */}
         <Teams />
         <Testimonials />
       </Box>

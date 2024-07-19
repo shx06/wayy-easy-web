@@ -7,9 +7,8 @@ export default function Services() {
     <>
       <SectionWrapper bgColor="secondary">
         <SectionHeading
-          heading="Our Services"
-          description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
-            incidunt rerum dolores pariatur. Odio, id. Iure commodi, similique."
+          heading="Our Projects"
+          description=""
           position="left"
         />
         <ProjectList />

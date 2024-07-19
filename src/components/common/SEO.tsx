@@ -1,8 +1,8 @@
 import Head from "next/head";
 
 const SEO = ({
-  title = "Web Serv | Developer Agency",
-  description = "web serv - a web development service provider agency",
+  title = "Wayy Easy | All Software Solutions",
+  description = "wayy easy - a software solution group for any kind of solution and in the best possible kind",
 }: {
   title?: string;
   description?: string;

@@ -1,7 +1,6 @@
 import banner from "@/assets/images/banner.png";
 import { Box, Stack, Typography, useTheme } from "@mui/material";
 import Image from "next/image";
-import BtnOutlined from "../button/BtnOutlined";
 import SectionWrapper from "../common/SectionWrapper";
 
 export default function Banner() {
@@ -51,17 +50,16 @@ export default function Banner() {
             }}
           >
             <Typography variant="h1" sx={{ fontWeight: 600, fontSize: { xs: 40, md: 55 } }}>
-              Grow Your Business Make More Money
+              Transforming Ideas into Reality
             </Typography>
 
             <Typography variant="subtitle1" sx={{ fontWeight: 500, lineHeight: 1.4, my: 4 }}>
-              Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil aenean socada commodo molestiae consequatur, vel illum
-              qui dolorem eum fugiat quo voluptas nulla.
+              At Wayy Easy, we harness cutting-edge technology and creativity to bring your vision to life, ensuring exceptional results in web and app development across diverse industries.
             </Typography>
 
-            <BtnOutlined>
+            {/* <BtnOutlined>
               <span>Learn More</span>
-            </BtnOutlined>
+            </BtnOutlined> */}
           </Box>
 
           {/* Right Side/Banner Image */}
