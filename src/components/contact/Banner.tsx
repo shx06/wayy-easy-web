@@ -22,7 +22,7 @@ export default function Banner() {
           position: "relative",
           overflow: "hidden",
           "::before": {
-            content: '""',
+            content: '',
             position: "absolute",
             top: 0,
             left: 0,
@@ -54,7 +54,7 @@ export default function Banner() {
             </Typography>
 
             <Typography variant="subtitle1" sx={{ fontWeight: 500, lineHeight: 1.4, my: 4 }}>
-              Count on us anytime for reliable support. Whether you have questions, need assistance, or want to discuss new ideas, we're here 24/7 to ensure your needs are met promptly and effectively, fostering a seamless experience with our dedicated team.            </Typography>
+              Count on us anytime for reliable support. Whether you have questions, need assistance, or want to discuss new ideas, we are here 24/7 to ensure your needs are met promptly and effectively, fostering a seamless experience with our dedicated team.            </Typography>
           </Box>
 
           {/* Right Side/Banner Image */}
